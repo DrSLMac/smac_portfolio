@@ -4,11 +4,11 @@ import { motion } from "framer-motion"
 // import { urlFor } from '../sanity'
 
 
-// type Props = {
-//     pageInfo: PageInfo;
-// }
+type Props = {
+    // pageInfo: PageInfo;
+}
 
-const About = ({ pageInfo }: Props) => {
+const About = ({ /*pageInfo*/ }: Props) => {
   return (
     <motion.div 
         initial={{ opacity: 0 }}
