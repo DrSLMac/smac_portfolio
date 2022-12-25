@@ -1,11 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
+//components
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import About from '../components/About'
 import WorkExperience from '../components/WorkExperience'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
+import ContactMe from '../components/ContactMe'
 
 export default function Home() {
   return (
@@ -42,9 +44,9 @@ export default function Home() {
         <Projects /*projects={projects}*//>
       </section>
 
-      {/* <section id="contact" className='snap-start'>
-        <ContactMe pageInfo={pageInfo} />
-      </section> */}
+      <section id="contact" className='snap-start'>
+        <ContactMe /*pageInfo={pageInfo}*/ />
+      </section>
 
       {/* <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
