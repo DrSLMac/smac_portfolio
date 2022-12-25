@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
+import Hero from '../components/Hero'
 
 
 
@@ -18,9 +19,10 @@ export default function Home() {
       <Header />
       {/* socials={socials} */}
 
-      {/* <section id="hero" className='snap-center'>
-        <Hero pageInfo={pageInfo} />
-      </section> */}
+      <section id="hero" className='snap-center'>
+        <Hero />
+      </section>
+      {/* pageInfo={pageInfo}  */}
 
       {/* <section id="about" className='snap-center'>
         <About pageInfo={pageInfo} />
