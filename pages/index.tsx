@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
-
+import About from '../components/About'
 
 
 export default function Home() {
@@ -24,9 +24,9 @@ export default function Home() {
       </section>
       {/* pageInfo={pageInfo}  */}
 
-      {/* <section id="about" className='snap-center'>
-        <About pageInfo={pageInfo} />
-      </section> */}
+      <section id="about" className='snap-center'>
+        <About /*pageInfo={pageInfo}*/ />
+      </section>
 
       {/* <section id="experience" className='snap-center'>
         <WorkExperience experiences={experiences}/>
