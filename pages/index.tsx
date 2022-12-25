@@ -12,8 +12,7 @@ import ContactMe from '../components/ContactMe'
 
 export default function Home() {
   return (
-    <div className='bg-[#FAF9F7] text-[#44615E] h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 '>
-      {/* scrollbar-thin scrollbar-track-[#EADFD6] scrollbar-thumb-[#997C80]/80 */}
+    <div className='bg-[#FAF9F7] text-[#44615E] h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar-thin scrollbar-track-[#EADFD6] scrollbar-thumb-[#997C80]/80'>
       <Head>
         <title>Shauna Mac Codes</title>
         <meta name="description" content="Shauna MacFarlane's Portfolio" />
