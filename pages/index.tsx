@@ -14,8 +14,8 @@ export default function Home() {
         <meta name="description" content="Shauna MacFarlane's Portfolio" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className='text-[#44615E]'>Let's see it work</h1>
-      <h2 className='text-red-500'>Let's see it work</h2>
+      <h1 className='text-[#44615E]'>Let it code</h1>
+      <h2 className='text-red-500'>Let it code</h2>
 
       {/* <Header socials={socials}/> */}
 
