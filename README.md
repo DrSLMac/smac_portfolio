@@ -64,6 +64,8 @@
 
 ## Installations/Dependencies:
 - npx create-next-app@latest --ts
+- npm install -D tailwindcss
+- npx tailwindcss init
 - npm install -D tailwindcss postcss autoprefixer
 - -- npx tailwindcss init
 - npm install react-social-icons
