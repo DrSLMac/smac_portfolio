@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-      @apply scroll-smooth;
-    }
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .heroButton {
+    @apply px-6 py-2 border border-[#44615E] rounded-full uppercase text-xs tracking-widest text-[#44615E] transition-all hover:border-[#CE928C] hover:text-[#CE928C]
   }
 
-  @layer components {
-    .heroButton {
-      @apply px-6 py-2 border border-[#44615E] rounded-full uppercase text-xs tracking-widest text-[#44615E] transition-all hover:border-[#CE928C] hover:text-[#CE928C]
-    }
-
-    .contactInput {
-      @apply outline-none bg-[#44615E]/10 rounded-sm border-b px-6 py-4 border-[#44615E] text-[#44615E] placeholder-[#44615E]/50 transition-all focus:border-[#CE928C]/40 focus:text-[#CE928C] hover:border-[#CE928C]
-    }
+  .contactInput {
+    @apply outline-none bg-[#44615E]/10 rounded-sm border-b px-6 py-4 border-[#44615E] text-[#44615E] placeholder-[#44615E]/50 transition-all focus:border-[#CE928C]/40 focus:text-[#CE928C] hover:border-[#CE928C]
   }
+}

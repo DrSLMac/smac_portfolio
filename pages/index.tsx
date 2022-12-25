@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -9,13 +9,13 @@ export default function Home() {
   return (
     <div className='bg-[#FAF9F7] text-[#44615E] h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 '>
       {/* scrollbar-thin scrollbar-track-[#EADFD6] scrollbar-thumb-[#997C80]/80 */}
-      {/* <Head>
+      <Head>
         <title>Shauna Mac Codes</title>
         <meta name="description" content="Shauna MacFarlane's Portfolio" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-      </Head> */}
-      <h1 className='text-red-500'>Let's see it work</h1>
+      </Head>
+      <h1 className='text-[#44615E]'>Let's see it work</h1>
+      <h2 className='text-red-500'>Let's see it work</h2>
 
       {/* <Header socials={socials}/> */}
 
