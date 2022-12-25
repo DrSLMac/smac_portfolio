@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
+import Header from '../components/Header'
 
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -16,7 +15,8 @@ export default function Home() {
       </Head>
       <h1 className='text-[#44615E]'>Let it code</h1>
 
-      {/* <Header socials={socials}/> */}
+      <Header />
+      {/* socials={socials} */}
 
       {/* <section id="hero" className='snap-center'>
         <Hero pageInfo={pageInfo} />

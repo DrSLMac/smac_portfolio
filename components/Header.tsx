@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Social } from '../typings';
 
 type Props = {
-    socials: Social[]
+    // socials: Social[]
 }
-
-const Header = ({ socials }: Props) => {
+// socials => add between curly braces in ({}: Props)
+const Header = ({}: Props) => {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div 
@@ -26,17 +26,17 @@ const Header = ({ socials }: Props) => {
             className='flex flex-row items-center'
             >
          
-            {socials.map((social) => (
+            {/* {socials.map((social) => (
                 <SocialIcon
                 key={social._id}
                 url={social.url}
                 fgColor="#44615E"
                 bgColor='transparent'
                 />
-            ))}
+            ))} */}
             </motion.div>
 
-        <Link href="#contact">
+        {/* <Link href="#contact"> */}
             <motion.div 
                 initial={{
                     x: 500,
@@ -57,7 +57,7 @@ const Header = ({ socials }: Props) => {
                         Get In Touch
                     </p>
             </motion.div>
-        </Link>
+        {/* </Link> */}
     </header>
   )
 }
