@@ -67,7 +67,7 @@
 - npm install -D tailwindcss
 - npx tailwindcss init
 - npm install -D tailwindcss postcss autoprefixer
-- -- npx tailwindcss init
+- npx tailwindcss init -p
 - npm install react-social-icons
 - npm install framer-motion
 - npm i react-simple-typewriter

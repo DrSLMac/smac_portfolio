@@ -15,7 +15,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1 className='text-[#44615E]'>Let it code</h1>
-      <h2 className='text-red-500'>Let it code</h2>
 
       {/* <Header socials={socials}/> */}
 
