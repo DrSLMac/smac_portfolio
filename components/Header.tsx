@@ -36,7 +36,7 @@ const Header = ({}: Props) => {
             ))} */}
             </motion.div>
 
-        {/* <Link href="#contact"> */}
+        <Link href="#contact">
             <motion.div 
                 initial={{
                     x: 500,
@@ -57,7 +57,7 @@ const Header = ({}: Props) => {
                         Get In Touch
                     </p>
             </motion.div>
-        {/* </Link> */}
+        </Link>
     </header>
   )
 }
