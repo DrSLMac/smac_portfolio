@@ -42,7 +42,7 @@ const ContactMe = ({ /*pageInfo*/ }: Props) => {
         />
            <img 
             className='absolute h-[70px] bottom-8 right-8 md:h-[160px] md:right-[40px] md:bottom-[50px] xl:h-[260px] xl:right-[100px]'
-            src={urlFor(pageInfo.design5).url()}
+            // src={urlFor(pageInfo.design5).url()}
             alt="abstract art"
         />
 
