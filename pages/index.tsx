@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 //components
 import Header from '../components/Header'
 import Hero from '../components/Hero'
@@ -48,20 +49,22 @@ export default function Home() {
         <ContactMe /*pageInfo={pageInfo}*/ />
       </section>
 
-      {/* <Link href="#hero">
+      <Link href="#hero">
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className="flex items-center justify-center">
             <img 
             className='h-12 w-10 rounded-full filter grayscale hover:grayscale-0 drop-shadow-lg'
-            src={urlFor(pageInfo.upArrow).url()} alt="up arrow" />
+            // src={urlFor(pageInfo.upArrow).url()} 
+            alt="up arrow" 
+            />
           </div>
           <img 
             className='fixed bottom-5 left-4 lg:w-[160px] md:w-[120px] w-[100px]'
-            src={urlFor(pageInfo.logo).url()}
+            // src={urlFor(pageInfo.logo).url()}
             alt="SM Logo"
           />
         </footer>
-      </Link> */}
+      </Link>
 
     </div>
   )
