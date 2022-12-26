@@ -5,10 +5,10 @@ import { Skill as SkillType } from '../typings'
 
 
 type Props = {
-//   skills: SkillType[]
+  skills: SkillType[]
 }
 
-const Skills = ({ /*skills*/ }: Props) => {
+const Skills = ({ skills }: Props) => {
   return (
     <motion.div
         initial={{ opacity: 0 }}
@@ -25,7 +25,7 @@ const Skills = ({ /*skills*/ }: Props) => {
         </h3>
 
         <div className='grid grid-cols-5 md:grid-cols-6 md:gap-5 gap-1 z-20'>
-          {/* {skills?.slice(0, skills.length/2).map(skill => (
+          {skills?.slice(0, skills.length/2).map(skill => (
             <Skill 
               key={skill._id}
               skill={skill}
@@ -37,8 +37,7 @@ const Skills = ({ /*skills*/ }: Props) => {
               skill={skill}
               directionLeft
             />
-          ))} */}
-          <p>skill</p>
+          ))}
         </div>
 
         <div className='w-full absolute top-[30%] bg-[#d6c4b6ad] left-0 h-[300px] lg:h-[500px] -skew-y-12 z-0' />

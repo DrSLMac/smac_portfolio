@@ -3,21 +3,20 @@ import { Typewriter, Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundCircles from './BackgroundCircles';
 import Link from "next/link";
 import { PageInfo } from '../typings';
-// import { urlFor } from '../sanity';
+import { urlFor } from '../sanity';
 import Image from 'next/image'
-// import design1 from '../public/design1.png'
-import mePic from '../public/me.jpeg'
+import design1 from '../public/design1.png'
+import design3 from '../public/design3.png'
 
 type Props = {
-    // pageInfo: PageInfo;
+    pageInfo: PageInfo;
 }
-//pageInfo will go back into props
-const Hero = ({  }: Props) => {
+
+const Hero = ({ pageInfo }: Props) => {
     const [text, count] = useTypewriter({
         words: [
             'Hey there!',
-            // `My name is ${pageInfo.name}`,
-            "My name is Shauna MacFarlane",
+            `My name is ${pageInfo.name}`,
             "<frontEndDeveloper />",
             "<empathetic />",
             "<collaborator />",
@@ -31,7 +30,7 @@ const Hero = ({  }: Props) => {
 
   return (
     <div className='relative'>
-        {/* <img 
+        <img 
             className="absolute top-40 left-12 w-16 md:w-32 lg:w-48  xl:w-72 z-15" 
             src={urlFor(pageInfo.design1).url()}
             alt='abstract circles'
@@ -40,27 +39,21 @@ const Hero = ({  }: Props) => {
             className="absolute bottom-6 right-12 w-16 md:w-32 lg:w-48 xl:w-72 z-18" 
             src={urlFor(pageInfo.design2).url()}
             alt='multiple abstract circles'
-        /> */}
+        />
     
 
         <div className='w-full absolute top-[30%] bg-[#d6c4b6ad] left-0 h-[300px] lg:h-[500px] -skew-y-12 z-0' />
 
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            <Image 
-                className='relative rounded-full w-40 h-40 mx-auto object-cover'
-                src={mePic}
-                alt="headshot at soccer game"
-            />
-            {/* <img 
+            <img 
             className='relative rounded-full w-40 h-40 mx-auto object-cover'
             src={urlFor(pageInfo.heroImage).url()}
             alt="headshot" 
-            /> */}
+            />
             <div className='z-20'>
                 <h2 className='text-sm md:text-base lg:text-lg uppercase text-[#44615E] pb-2 tracking-[10px] lg:tracking-[15px]'>
-                    SOFTWARE ENGINEER
-                    {/* {pageInfo.role} */}
+                    {pageInfo.role}
                 </h2>
                 <h1 className='text-2xl lg:text-6xl font-semibold scroll-px-10'>
                     <span className='mr-3'>{text}</span>

@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Social } from '../typings';
 
 type Props = {
-    // socials: Social[]
+    socials: Social[]
 }
-// socials => add between curly braces in ({}: Props)
-const Header = ({}: Props) => {
+
+const Header = ({ socials }: Props) => {
   return (
     <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div 
@@ -25,15 +25,14 @@ const Header = ({}: Props) => {
             transition={{ duration: 1.5 }}
             className='flex flex-row items-center'
             >
-         
-            {/* {socials.map((social) => (
+            {socials.map((social) => (
                 <SocialIcon
                 key={social._id}
                 url={social.url}
                 fgColor="#44615E"
                 bgColor='transparent'
                 />
-            ))} */}
+            ))}
             </motion.div>
 
         <Link href="#contact">
@@ -59,7 +58,7 @@ const Header = ({}: Props) => {
             </motion.div>
         </Link>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

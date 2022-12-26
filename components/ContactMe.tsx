@@ -2,7 +2,7 @@ import React from 'react'
 import { PhoneIcon, MapPinIcon, EnvelopeIcon } from "@heroicons/react/24/solid"
 import { useForm, SubmitHandler } from "react-hook-form";
 import { PageInfo } from '../typings';
-// import { urlFor } from '../sanity';
+import { urlFor } from '../sanity';
 
 type Inputs = {
     name: string,
@@ -12,10 +12,10 @@ type Inputs = {
   };
 
 type Props = {
-    // pageInfo: PageInfo;
+    pageInfo: PageInfo;
 }
 
-const ContactMe = ({ /*pageInfo*/ }: Props) => {
+const ContactMe = ({ pageInfo }: Props) => {
     const { register, handleSubmit } = useForm<Inputs>();
 
     const onSubmit: SubmitHandler<Inputs> = (formData) => {
@@ -32,17 +32,17 @@ const ContactMe = ({ /*pageInfo*/ }: Props) => {
 
         <img 
             className='absolute top-[70px] right-[18px] h-[45px] md:h-[150px] md:right-[40px] md:top-[120px] xl:h-[250px] xl:right-[100px]'
-            // src={urlFor(pageInfo.design3).url()}
+            src={urlFor(pageInfo.design3).url()}
             alt="abstract art"
         />
         <img 
             className='absolute -rotate-12 h-[110px] left-[15px] top-[180px] md:h-[250px] md:left-[30px] md:top-[300px] xl:h-[470px] xl:left-[80px] xl:top-[180px]'
-            // src={urlFor(pageInfo.design4).url()}
+            src={urlFor(pageInfo.design4).url()}
             alt="abstract art"
         />
            <img 
             className='absolute h-[70px] bottom-8 right-8 md:h-[160px] md:right-[40px] md:bottom-[50px] xl:h-[260px] xl:right-[100px]'
-            // src={urlFor(pageInfo.design5).url()}
+            src={urlFor(pageInfo.design5).url()}
             alt="abstract art"
         />
 
