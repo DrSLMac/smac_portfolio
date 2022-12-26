@@ -75,6 +75,7 @@
 - npm install react-hook-form - https://react-hook-form.com/
 - npm install --save-dev tailwind-scrollbar - https://github.com/adoxography/tailwind-scrollbar
 - npm install next-sanity @portabletext/react @sanity/image-url - https://www.npmjs.com/package/next-sanity
+- Sanity studio deployed at https://smac-port.sanity.studio/desk
 - npm i -g vercel - Vercel CLI
 
 ## To deploy:
