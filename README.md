@@ -1,19 +1,31 @@
 ![portfolio_banner](https://user-images.githubusercontent.com/102887963/209419098-dc22a762-f837-4537-ad73-890d9374fe93.png)
 
-## Table of Contents 📖
+## Table of Contents 📖 <a name="toc"></a>
 - [Introduction](#introduction)
 - [Technologies and Tools](#technologies-and-tools)
 - [Illustrations & Demo](#illustrations-and-demo)
 - [Project Reflections](#project-reflections)
 - [Roadmap](#roadmap)
 - [Deployed Page](#deployed-page)
-- [Set Up](#set-up)
 - [Contributor](#contributor)
 - [Sources](#sources)
 
-## Introduction
-- 
-- 
+## Introduction       
+* Full stack portfolio build, with tech stretches with TypeScript, TailwindCSS, and Next.js.
+* Built out the backend using Sanity.io with deployment to Vercel. 
+* Pages snap in place when scrolling.
+* Work Experiences and Projects snap in carousel fashion. 
+* Additional technologies used in this build include:
+  - Next.js
+  - Tailwind CSS
+  - Framer Motion
+  - React Simple Typewriter
+  - Hero Icons
+  - React hook form
+  - Tailwind Scrollbar
+  - Sanity.io toolkit for Next.js.
+
+[Back to 🔝](#toc)
 
 ## Technologies and Tools
 <div align="center">
@@ -23,7 +35,7 @@
 
 - ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 - ![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white)
-- ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 - ![NPM](https://img.shields.io/badge/NPM-%F0%9F%91%BE-orange)
 
   
@@ -33,27 +45,27 @@
 
 - ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
 - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-- ![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
+- ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 - ![RESTful API](https://img.shields.io/badge/RESTful%20API-%E2%8E%94-brightgreen)
 
 </td>
 
 <td>
 
-- ![GitHub Projects](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-- ![GitHub Issues](https://img.shields.io/badge/GitHub%20Projects-%F0%9F%92%BB-lightgrey)
+- ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white)
+- ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 - ![JSON](https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white)
-- ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
+- ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
 
 
 </td>
 
 <td>
 
-- ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-- ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=for-the-badge&logo=adobe%20illustrator&logoColor=white)
+- ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+- ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
 - ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-- ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
+- ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 </td>
 
@@ -61,87 +73,54 @@
 </table>
 </div>
 
-
-## Installations/Dependencies:
-- npx create-next-app@latest --ts
-- npm install -D tailwindcss
-- npx tailwindcss init
-- npm install -D tailwindcss postcss autoprefixer
-- npx tailwindcss init -p
-- npm install react-social-icons
-- npm install framer-motion
-- npm i react-simple-typewriter
-- npm install @heroicons/react - https://heroicons.com/
-- npm install react-hook-form - https://react-hook-form.com/
-- npm install --save-dev tailwind-scrollbar - https://github.com/adoxography/tailwind-scrollbar
-- npm install next-sanity @portabletext/react @sanity/image-url - https://www.npmjs.com/package/next-sanity
-- Sanity studio deployed at https://smac-port.sanity.studio/desk
-- npm i -g vercel - Vercel CLI
-
-## To deploy:
-- vercel build
-- vercel deploy --prebuilt
-- Preview: https://smac-portfolio-drslmac.vercel.app [26s]
-📝  To deploy to production (smac-portfolio.vercel.app), run `vercel --prod`
-
-deploy site:  https://smac-portfolio.vercel.app
-
-## Technologies
-- Next.js
-- Tailwind CSS
-- Framer Motion
-- React Simple Typewriter
-- Hero Icons
-- React hook form
-- Tailwind Scrollbar
-- Sanity.io toolkit for Next.js.
-
-
-
+[Back to 🔝](#toc)
 
 ## Illustrations and Demo
 #### Home Page
-![homescreen](https://user-images.githubusercontent.com/102887963/209448179-9ed6a68c-e014-43cd-8237-ffe94e96c14a.gif)
+<img width="1691" alt="Screenshot 2022-12-26 at 8 26 54 PM" src="https://user-images.githubusercontent.com/102887963/209601869-cba2aed6-4b37-4916-afc2-162aa7545e07.png">
 
 ----
-#### Snap scroll effect for each page
-![scroll_thru](https://user-images.githubusercontent.com/102887963/209448593-a31cb1ed-159f-4bb8-a2aa-96f6360bab7b.gif)
+#### About Page
+<img width="1688" alt="Screenshot 2022-12-26 at 8 27 10 PM" src="https://user-images.githubusercontent.com/102887963/209601708-4d069d82-eddb-4ac9-9425-dc464be22880.png">
 
 ----
-#### Snap scroll carousel effect for projects and experiences
-![horizontal_scroll](https://user-images.githubusercontent.com/102887963/209449792-71291b0b-deec-4afa-9822-9bd432415287.gif)
+#### Work Experience Page
+<img width="1687" alt="Screenshot 2022-12-26 at 8 27 27 PM" src="https://user-images.githubusercontent.com/102887963/209601752-cbb6bbcf-ed0f-4402-81be-124de526d99e.png">
 
 ----
-#### Contact Me Page
-<img width="1643" alt="Screenshot 2022-12-24 at 2 12 54 PM" src="https://user-images.githubusercontent.com/102887963/209449902-930c3f27-03a1-4d8c-90c2-c67c9ef78956.png">
+#### Skills
+<img width="1687" alt="Screenshot 2022-12-26 at 8 27 40 PM" src="https://user-images.githubusercontent.com/102887963/209601775-850605d1-7391-4017-9894-37884977fba4.png">
 
 ----
+#### Projects
+<img width="1687" alt="Screenshot 2022-12-26 at 8 28 16 PM" src="https://user-images.githubusercontent.com/102887963/209601921-149985e9-8753-48e9-bdf7-a8c12c59a77d.png">
+
+----
+#### Contact Me
+<img width="1684" alt="Screenshot 2022-12-26 at 8 28 36 PM" src="https://user-images.githubusercontent.com/102887963/209601912-d54515b1-f404-4643-aee4-ddb662dcffdc.png">
+
+----
+[Back to 🔝](#toc)
+
 ## Project Reflections
 #### Wins
-- Add full responsiveness to allow for easy viewing on mobile devices
-- 
-- 
+- Added full responsiveness to allow for easy viewing on mobile devices, tablets and full screens
+- Built out backend for a full stack project
+- Created 2 carousels with snap scrolling to view projects and work experience
 
 #### Challenges
-- 
-- 
+- Got stuck when trying to deploy to vercel with continuous integration from Sanity.io studio. Implemented environmental variables to set base URL when local host wasn't running.
 
 ## Roadmap
 Future features could include:
-- 
-- 
-- 
-- 
+- Adding a page for a blog to keep track of successes and failures in my coding journey
+- Link up to a small business page to do freelance work
+- Add a toggle for user to switch between light and dark mode.
+
+[Back to 🔝](#toc)
 
 ## Deployed Page
 Visit the published site [here](https://smac-portfolio.vercel.app)
-
-## Set Up
-1. Fork this repo
-2. Clone the repo to your local machine
-3. `cd` into the root of the project directory
-4. Run `npm install`
-5. Run `npm start`
 
 ## Contributor
  Shauna MacFarlane-Okongo
@@ -149,10 +128,16 @@ Visit the published site [here](https://smac-portfolio.vercel.app)
 - [![GitHub Badge](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/DrSLMac)
  
 ## Sources
- - [MDN](http://developer.mozilla.org/en-US/)
- - [YouTube](https://www.youtube.com/)
- - [W3Schools](https://www.w3schools.com/)
+ - [Next.js](https://nextjs.org/)
  - [React JS](https://reactjs.org/)
- - [Router docs](https://reactrouter.com/)
- - [Cypress docs](https://docs.cypress.io/guides/overview/why-cypress)
- - [Medium](https://medium.com/)
+ - [TypeScript](https://www.typescriptlang.org/)
+ - [Tailwind CSS](https://tailwindcss.com/)
+ - [React Social Icons](https://www.npmjs.com/package/react-social-icons)
+ - [Framer](https://www.framer.com/docs/)
+ - [React-Simple-Typewriter](https://www.npmjs.com/package/react-simple-typewriter)
+ - [Hero Icons](https://heroicons.com/)
+ - [React Hook Forms](https://react-hook-form.com/)
+ - [Tailwind Scrollbar](https://github.com/adoxography/tailwind-scrollbar)
+ - [Sanity.io](https://www.sanity.io/)
+ 
+[Back to 🔝](#toc)
