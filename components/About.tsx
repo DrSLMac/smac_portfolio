@@ -30,7 +30,7 @@ const About = ({ pageInfo }: Props) => {
             mt-[90px] mb-4
             md:mt-36 '>
             <motion.img 
-                initial= {{ x: -200, opacity: 1 }}
+                initial= {{ x: 150, opacity: 1 }}
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, x:0 }}
                 viewport={{ once: true }}
