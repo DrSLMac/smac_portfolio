@@ -49,7 +49,9 @@ const About = ({ pageInfo }: Props) => {
     
         <div className='overflow-y-scroll 
             text-sm text-left px-2 h-[60%]
-            md:text-base md:px-10'>
+            md:text-base md:px-10
+            lg:text-lg
+            xl:text-xl'>
             <p className=''>
                 {pageInfo?.backgroundInformation1}
             </p>

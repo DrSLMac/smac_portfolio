@@ -14,17 +14,31 @@ const Skills = ({ skills }: Props) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
-        className='h-screen flex flex-col relative text-center md:text-left xl:flex-row max-w-[2000px] xl:px-10  justify-center xl:space-y-0 mx-auto items-center'
+        className='h-screen flex flex-col relative mx-auto
+          text-center items-center justify-center  
+          xl:flex-row xl:px-10 xl:space-y-0
+          max-w-[2000px]'
       >
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-[#44615E] text-2xl'>
+        <h3 className='absolute uppercase text-[#44615E]
+            top-[50px] tracking-[15px] text-xl
+            md:top-20 md:tracking-[20px] md:text-2xl
+            lg:text-3xl lg:tracking-[22px]'>
             Skills
         </h3>
 
-        <h3 className='absolute top-36 uppercase tracking-[3px] text-[#44615E]'>
+        <h3 className='absolute uppercase text-[#44615E]
+        top-[80px] tracking-[2px] text-base font-light
+        md:top-[125px] md:tracking-[10px] md:text-xl
+        lg:text-2xl
+        '>
             Hover over a skill for current proficiency
         </h3>
 
-        <div className='grid grid-cols-5 md:grid-cols-6 xl:grid-cols-7 md:gap-5 gap-1 z-20'>
+        <div className='mt-7 grid z-20
+          grid-cols-5 gap-1
+          md:grid-cols-6 md:gap-9
+          lg:grid-cols-7 pt-7 lg:gap-4
+          '>
           {skills?.slice(0, skills.length/2).map(skill => (
             <Skill 
               key={skill._id}
