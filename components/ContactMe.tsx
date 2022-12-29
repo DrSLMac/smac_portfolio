@@ -43,7 +43,7 @@ const ContactMe = ({ pageInfo }: Props) => {
         />
         <img 
             className='absolute -rotate-12 z-0
-                h-[90px] left-[12px] top-[100px] 
+                h-[80px] left-[12px] top-[160px] 
                 md:h-[250px] md:left-[30px] md:top-[300px] 
                 xl:h-[470px] xl:left-[80px] xl:top-[180px]'
             src={urlFor(pageInfo.design4).url()}
