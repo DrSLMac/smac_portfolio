@@ -31,12 +31,22 @@ const Hero = ({ pageInfo }: Props) => {
   return (
     <div className='relative'>
         <img 
-            className="absolute top-40 left-12 w-16 md:w-32 lg:w-48  xl:w-72 z-15" 
+            className="absolute z-10
+                top-[90px] left-8 w-[80px]
+                md:top-30 md:left-12 md:w-[140px] 
+                lg:w-45 
+                xl:w-[250px]
+                2xl:w-[300px]" 
             src={urlFor(pageInfo.design1).url()}
             alt='abstract circles'
         />
         <img 
-            className="absolute bottom-6 right-12 w-16 md:w-32 lg:w-48 xl:w-72 z-18" 
+            className="absolute z-18 
+                bottom-7 right-10 w-[100px] 
+                md:bottom-7 md:right-14 md:w-44 
+                lg:w-48 
+                xl:w-[250px]
+                2xl:w-[300px]" 
             src={urlFor(pageInfo.design2).url()}
             alt='multiple abstract circles'
         />
@@ -44,10 +54,17 @@ const Hero = ({ pageInfo }: Props) => {
 
         <div className='w-full absolute top-[30%] bg-[#d6c4b6ad] left-0 h-[300px] lg:h-[500px] -skew-y-12 z-0' />
 
-        <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+        <div className='h-screen flex
+            flex-col
+            items-center
+            justify-center
+            text-center
+            overflow-hidden
+            space-y-10
+            md:space-y-6    '>
             <BackgroundCircles />
             <img 
-            className='relative rounded-full w-40 h-40 mx-auto object-cover'
+            className='relative rounded-full w-20 h-20 md:w-40 md:h-40 mx-auto object-cover'
             src={urlFor(pageInfo.heroImage).url()}
             alt="headshot" 
             />
@@ -59,18 +76,18 @@ const Hero = ({ pageInfo }: Props) => {
                     <span className='mr-3'>{text}</span>
                     <Cursor cursorColor="#CE928C" />
                 </h1>
-                <div className="pt-5 space-x-2">
+                <div className="flex flex-col md:flex-row items-center p-2 md:p-6 lg:p-8">
                     <Link href="#about">
-                        <button className='heroButton'>About</button>
+                        <button className='heroButton mt-1 w-40 md:mx-1 lg:w-48 lg:mx-2'>About</button>
                     </Link>
                     <Link href="#experience">
-                        <button className='heroButton'>Experience</button>
+                        <button className='heroButton mt-1 w-40 md:mx-1 lg:w-48 lg:mx-2'>Experience</button>
                     </Link>
                     <Link href="#skills">
-                        <button className='heroButton'>Skills</button>
+                        <button className='heroButton mt-1 w-40 md:mx-1 lg:w-48 lg:mx-2'>Skills</button>
                     </Link>
                     <Link href="#projects">
-                        <button className='heroButton'>Projects</button>
+                        <button className='heroButton mt-1 w-40 md:mx-1 lg:w-48 lg:mx-2'>Projects</button>
                     </Link>
                 </div>
             </div>

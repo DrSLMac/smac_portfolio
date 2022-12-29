@@ -58,11 +58,18 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
         <footer className='sticky bottom-5 w-full cursor-pointer'>
           <div className="flex items-center justify-center">
             <img 
-            className='h-12 w-10 rounded-full filter grayscale hover:grayscale-0 drop-shadow-lg'
+            className='rounded-full filter grayscale 
+              hover:grayscale-0 
+              drop-shadow-lg
+              h-9 w-7
+              md:h-12 md:w-10'
             src={urlFor(pageInfo.upArrow).url()} alt="up arrow" />
           </div>
           <img 
-            className='fixed bottom-5 left-4 lg:w-[160px] md:w-[120px] w-[100px]'
+            className='fixed bottom-5 left-4
+              w-[80px]
+              md:w-[120px] 
+              lg:w-[160px]'
             src={urlFor(pageInfo.logo).url()}
             alt="SM Logo"
           />
