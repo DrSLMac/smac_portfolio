@@ -36,7 +36,7 @@ const Hero = ({ pageInfo }: Props) => {
                 md:top-30 md:left-12 md:w-[140px] 
                 lg:w-45 
                 xl:w-[250px]
-                2xl:w-[300px]" 
+                2xl:w-[260px]" 
             src={urlFor(pageInfo.design1).url()}
             alt='abstract circles'
         />

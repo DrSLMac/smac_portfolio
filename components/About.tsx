@@ -48,9 +48,9 @@ const About = ({ pageInfo }: Props) => {
         </motion.div>
     
         <div className='overflow-y-scroll 
-            text-sm text-left px-2 h-[60%]
+            text-sm text-left px-6 h-[60%]
             md:text-base md:px-10
-            lg:text-lg
+            lg:text-lg lg:px-12
             xl:text-xl'>
             <p className=''>
                 {pageInfo?.backgroundInformation1}
