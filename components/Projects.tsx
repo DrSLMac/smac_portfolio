@@ -14,17 +14,16 @@ const Projects = ({ projects }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative h-screen flex flex-col items-center overflow-hidden z-0
+      className='relative h-screen flex flex-col justify-center items-center overflow-hidden z-0
         mx-auto
         md:flex-row 
         max-w-full'
     >
       <h3 className='absolute uppercase text-[#44615E]
-            top-[50px] tracking-[15px] text-xl
+            top-[65px] tracking-[15px] text-xl
             md:top-20 md:tracking-[20px] md:text-2xl
             lg:text-3xl lg:tracking-[22px]'>
-        Projects
-      </h3>
+        Projects</h3>
 
       <div className='relative flex overflow-x-scroll  
         snap-x snap-mandatory z-20 

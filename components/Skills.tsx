@@ -36,8 +36,8 @@ const Skills = ({ skills }: Props) => {
 
         <div className='mt-7 grid z-20
           grid-cols-5 gap-1
-          md:grid-cols-6 md:gap-9
-          lg:grid-cols-7 pt-7 lg:gap-4
+          md:grid-cols-6 md:gap-6
+          lg:grid-cols-7 pt-8 lg:gap-7 lg:mt-1
           '>
           {skills?.slice(0, skills.length/2).map(skill => (
             <Skill 

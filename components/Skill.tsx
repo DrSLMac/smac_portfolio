@@ -17,7 +17,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
                 group-hover:grayscale transition duration-300 ease-out
                 w-12 h-12 m-1
                 md:w-[90px] md:h-[90px]
-                xl:w-32 xl:h-32'
+                xl:w-[120px] xl:h-[120px]'
             initial={{
                 x: directionLeft ? -100 : 100,
                 opacity: 0,
@@ -29,7 +29,7 @@ const Skill = ({ directionLeft, skill }: Props) => {
         <div className='absolute opacity-0 group-hover:opacity-90 transition duration-300 ease-in-out group-hover:bg-white rounded-full z-0
             w-12 h-12 m-1
             md:w-[90px] md:h-[90px]
-            xl:w-32 xl:h-32'>
+            xl:w-[120px] xl:h-[120px]'>
             <div className='flex flex-col items-center justify-center h-full'>
                 <p className='text-xl text-center font-bold text-[#44615E] opacity-100'>{skill?.title}</p>
                 <p className='text-xl font-bold text-[#44615E] opacity-100'>{skill.progress ? `${skill.progress}%` : ''}</p>
