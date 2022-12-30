@@ -32,7 +32,7 @@ const ExperienceCard = ({ experience }: Props) => {
             alt="computer science"
         />
 
-        <div className='px-3 pt-2 md:px-4 lg:px-5 xl:px-6'>
+        <div className='px-3 pt-5 md:px-4 lg:px-5 xl:px-6'>
             <h4 className='text-xl md:text-3xl lg:text-4xl font-light'>{experience.company}</h4>
             <p className='font-bold text-md md:text-2xl lg:text-3xl'>{experience.jobTitle}</p>
             <div className='flex justify-center items-center flex-wrap 
@@ -60,7 +60,7 @@ const ExperienceCard = ({ experience }: Props) => {
 
             <ul className='overflow-y-scroll list-disc
                 scrollbar-thin scrollbar-track-[#EADFD6] scrollbar-thumb-[#997C80]/80
-                text-sm h-[45%] pb-1
+                text-sm space-y-1 h-40 pb-1
                 md:ml-5 md:text-lg md:pr-5 '>
                 {experience.points.map((point, i) => (
                     <li key={i}>• {point}</li>

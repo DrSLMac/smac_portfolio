@@ -14,7 +14,7 @@ const Projects = ({ projects }: Props) => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className='relative h-screen flex flex-col justify-evenly items-center overflow-hidden z-0
+      className='relative h-screen flex flex-col items-center overflow-hidden z-0
         mx-auto
         md:flex-row 
         max-w-full'
@@ -29,7 +29,7 @@ const Projects = ({ projects }: Props) => {
       <div className='relative flex overflow-x-scroll  
         snap-x snap-mandatory z-20 
         scrollbar-thin scrollbar-track-[#EADFD6] scrollbar-thumb-[#997C80]/80
-        w-full h-[900px] mt-10'>
+        w-full h-[800px] mt-12 mb-8'>
         {projects.map((project, i) => (
           <motion.div 
             key={Math.random()} 
@@ -48,27 +48,30 @@ const Projects = ({ projects }: Props) => {
                 viewport={{ once: true }}
                 src={urlFor(project.image).url()}
                 className="rounded-lg drop-shadow-xl
-                  h-[190px] 
+                  h-40 
                   md:h-80"
               />
             </Link>
 
             <div className='
-              space-y-2
+              space-y-3
               md:space-y-4 md:px-6 
               max-w-6xl'>
-              <h4 className='font-semibold text-center
-                text-xl mt-3
-                md:text-4xl'>
-                <span className='underline decoration-[#CE928C]'>
-                  Project {i + 1} of {projects.length}:
-                </span>{"  "}
-                {project.title}
-              </h4>
+
+              <div className='font-semibold text-center underline decoration-[#CE928C] space-y-1
+                  text-xl mt-3
+                  md:text-4xl'>
+                <h4 className='tracking-[2px]'>
+                    Project {i + 1} of {projects.length}:
+                </h4>
+                <h4 className='tracking-[1px]'> 
+                  {project.title}
+                </h4>
+              </div>  
 
               <div className='text-left overflow-y-scroll
                 scrollbar-thin scrollbar-track-[#EADFD6] scrollbar-thumb-[#997C80]/80
-                text-sm px-4 h-[275px]
+                text-sm px-5 h-[230px]
                 md:text-lg md:h-[350px] md:w-[700px] 
                 xl:w-[900px]'>
                 <p>
@@ -83,7 +86,7 @@ const Projects = ({ projects }: Props) => {
         ))
       } 
       </div>
-      <div className='w-full absolute top-[30%] bg-[#d6c4b6ad] left-0 h-[500px] -skew-y-12' />
+      <div className='w-full absolute top-[30%] bg-[#d6c4b6ad] left-0 h-[300px] md:h-[500px] -skew-y-12' />
     </motion.div>
 )}
 

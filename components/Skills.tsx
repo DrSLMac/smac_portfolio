@@ -27,9 +27,9 @@ const Skills = ({ skills }: Props) => {
         </h3>
 
         <h3 className='absolute uppercase text-[#44615E]
-        top-[80px] tracking-[2px] text-base font-light
-        md:top-[125px] md:tracking-[10px] md:text-xl
-        lg:text-2xl
+        top-[80px] tracking-[2px] text-sm font-light
+        md:top-[125px] md:tracking-[10px] md:text-lg
+        lg:text-xl
         '>
             Hover over a skill for current proficiency
         </h3>
